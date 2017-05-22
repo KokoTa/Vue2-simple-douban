@@ -3,13 +3,18 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './assets/index.scss' // 全局默认样式
+import store from './store/store' // 引入状态，处理loading界面
+import loading from './components/loading' // 引入自定义组件loading
 
 Vue.config.productionTip = false
+Vue.use(loading)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })
