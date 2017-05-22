@@ -38,6 +38,20 @@ module.exports = {
         include: [resolve('src'), resolve('test')]
       },
       {
+        test: /\.css$/,
+        loader: "style-loader!css-loader",
+        include: [
+          '/src/'
+        ]
+      },
+      {
+        test: /\.scss$/,
+        loader: "style-loader!css-loader!sass-loader",
+        include: [
+          '/src/' // 表示在src目录下的css需要编译
+        ]
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
