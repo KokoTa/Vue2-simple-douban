@@ -1,0 +1,14 @@
+// APP颜色配置
+
+// 默认颜色
+$defaultColor: #42bd56; // 绿
+// 隔离行颜色
+$line: #e4e4e4; // 浅灰
+
+// 头部
+$headerBg: $defaultColor;
+$headerDefaultColor: rgb(73,73,73); //灰
+$headerBorderColor: $line;
+// 切换按钮
+$tabBorderColor: $line;
+$tabActiveColor: $defaultColor;
