@@ -12,7 +12,7 @@
 				<img src="../../assets/images/ic_tab_home_active.png" alt="" slot="icon-active">
 				<span slot="icon-text">首页</span>
 			</m-tab-item>
-			<m-tab-item path="Movie">
+			<m-tab-item path="Index">
 				<img src="../../assets/images/ic_tab_subject_normal.png" alt="" slot="icon-normal">
 				<img src="../../assets/images/ic_tab_subject_active.png" alt="" slot="icon-active">
 				<span slot="icon-text">电影</span>
@@ -22,11 +22,11 @@
 </template>
 
 <script>
-	import mTab from '../../components/tab'
+	import mTab from '../../components/tab-wrap'
 	import mTabItem from '../../components/tab-Item'
 
 	export default {
-		name: 'Nav',
+		name: 'Tab',
 		components: {
 			mTab,
 			mTabItem
