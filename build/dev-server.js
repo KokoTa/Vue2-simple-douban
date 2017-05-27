@@ -21,6 +21,17 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+
+// 添加静态数据路由
+var homeData = require('../src/data/homeData.json')
+var apiRoutes = express.Router()
+apiRoutes.get('/homeData', function (req, res) {
+  res.json({
+    data: homeData
+  })
+})
+app.use('/api', apiRoutes) // 将新路由添加到代理路径
+
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {
