@@ -36,6 +36,7 @@
 		padding: 20px 15px;
 		position: relative;
 		overflow: hidden;
+		border-bottom: 1px solid #eee;
 		
 		.hot-item-top {
 			display: flex;
@@ -68,6 +69,7 @@
 			flex-direction: row;
 			justify-content: space-between;
 			margin-top: 30px;
+			color: #bfbfbf;
 		}
 	}
 </style>

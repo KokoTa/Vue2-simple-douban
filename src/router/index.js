@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import Tab from '@/page/tab/Tab.vue'
 import Index from '@/page/index/Index.vue'
+import Movie from '@/page/movie/Movie.vue'
 
 Vue.use(Router)
 
@@ -17,7 +18,12 @@ export default new Router({
   				path: 'index',
   				name: 'Index',
   				component: Index
-  			}
+  			},
+        {
+          path: 'movie',
+          name: 'Movie',
+          component: Movie
+        }
   		]
   	},
   	{

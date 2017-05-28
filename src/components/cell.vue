@@ -33,7 +33,7 @@
 <style lang="scss">
 	.m-cell {
 		position: relative;
-		padding-left: 15px;
+		padding-left: 10px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -45,6 +45,18 @@
 			height: 100%;
 			background: gray;
 		}
+		&.large {
+			.m-cell-title{
+				font-size: 17px;
+			}
+			.m-cell-right{
+				font-size: 15px;
+				img {
+					margin-top:-5px;
+				}
+			}
+		}
+		&.normal {}
 	}
 	.m-cell-title {
 		font-size: 1.5rem;

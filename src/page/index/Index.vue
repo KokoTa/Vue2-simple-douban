@@ -5,9 +5,9 @@
 		<div class="page-container">
 			<!-- 滑块, 由于mint-ui内置的swipe组件存在高度无法自适应Bug，因此单独引用swipe官方版 -->
 			<m-swipe :autoplay="3000" swipeid="S1">
-				<div class="swiper-slide " slot="swiper-item"><img src="../../assets/images/01.jpg" alt=""></div>
-				<div class="swiper-slide " slot="swiper-item"><img src="../../assets/images/02.jpg" alt=""></div>
-				<div class="swiper-slide " slot="swiper-item"><img src="../../assets/images/03.jpg" alt=""></div>
+				<div class="swiper-slide " slot="swiper-item"><img src="/static/images/01.jpg" alt=""></div>
+				<div class="swiper-slide " slot="swiper-item"><img src="/static/images/02.jpg" alt=""></div>
+				<div class="swiper-slide " slot="swiper-item"><img src="/static/images/03.jpg" alt=""></div>
 			</m-swipe>
 			<!-- 热点 -->
 			<div class="hot-wrap">
@@ -73,32 +73,6 @@
 
 <style lang="scss" scoped>
 	@import '../../assets/color.scss';
-
-	.page {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		height: 100%;
-		transition: all .5s ease;
-	}
-	.page-header {
-		font-size: 2rem;
-		font-weight: bolder;
-		height: 50px;
-		background: $headerBg;
-		z-index: 1;
-	}	
-	.page-container {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 50px;
-		bottom: 50px;
-		overflow: auto;
-		-webkit-overflow-scrolling:touch;
-		z-index: 0;
-	}
 
 	.hot-wrap {
 		margin-top: 10px;

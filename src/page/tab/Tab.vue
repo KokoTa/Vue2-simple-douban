@@ -8,13 +8,13 @@
 		<m-tab>
 			<m-tab-item path="Index">
 				<!--slot内容分发-->
-				<img src="../../assets/images/ic_tab_home_normal.png" alt="" slot="icon-normal">
-				<img src="../../assets/images/ic_tab_home_active.png" alt="" slot="icon-active">
+				<img src="/static/images/ic_tab_home_normal.png" alt="" slot="icon-normal">
+				<img src="/static/images/ic_tab_home_active.png" alt="" slot="icon-active">
 				<span slot="icon-text">首页</span>
 			</m-tab-item>
-			<m-tab-item path="Index">
-				<img src="../../assets/images/ic_tab_subject_normal.png" alt="" slot="icon-normal">
-				<img src="../../assets/images/ic_tab_subject_active.png" alt="" slot="icon-active">
+			<m-tab-item path="Movie">
+				<img src="/static/images/ic_tab_subject_normal.png" alt="" slot="icon-normal">
+				<img src="/static/images/ic_tab_subject_active.png" alt="" slot="icon-active">
 				<span slot="icon-text">电影</span>
 			</m-tab-item>
 		</m-tab>
