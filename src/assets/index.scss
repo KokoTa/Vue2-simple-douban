@@ -29,6 +29,14 @@
 }
 
 // 页面切换过渡
+.slide-left-enter, .slide-right-leave-active {
+	opacity: 0;
+	transform: translateX(50px);
+}
+.slide-right-enter, .slide-left-leave-active {
+	opacity: 0;
+	transform: translateX(-50px);
+}
 
 
 // 电影页栏目标题
@@ -53,8 +61,11 @@
 // 正在热映和即将上映样式
 .film-wrap {
 	margin-top: 40px;
+	transition: all .5s ease;
+	position: absolute; // 动画需要容器为absolute
 	.film {
 		.film-item {
+			position: relative;
 			display: flex;
 			flex-direction: row;
 			padding: 15px;

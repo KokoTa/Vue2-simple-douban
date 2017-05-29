@@ -2,7 +2,7 @@
 	<div class="page">
 		<!-- head -->
 		<m-header fixed title="院线电影" class="page-header">
-			<router-link :to="{name:'Index'}" slot="left">
+			<router-link :to="{name:'Movie'}" slot="left">
 				<img src="/static/images/ic_bar_back_green.png">
 			</router-link>
 		</m-header>
@@ -65,10 +65,6 @@
 			height: 20px;
 		}
 	}
-	
-	.page-container {
-		position: relative;
-	}
 
 	.nav {
 		width: 100%;
@@ -81,6 +77,7 @@
 		top: 50px;
 		left: 0;
 		right: 0;
+		z-index: 2;
 		&:before {
 			content: '';
 			width: 100%;

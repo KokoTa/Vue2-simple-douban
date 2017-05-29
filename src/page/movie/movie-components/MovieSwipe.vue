@@ -17,7 +17,7 @@
 		        	</router-link>
 		        </div>
 		        <div class="swiper-slide" v-if="isShow">
-		        	<router-link :to="{ name: 'Index'}" tag='a'>
+		        	<router-link :to="{ name: path }" tag='a'>
 		        		<img src="/static/images/movie-all-gray.png" alt="">
 		        		<div class="text-all">全部<br>{{ list.total }}部</div>
 		        	</router-link>

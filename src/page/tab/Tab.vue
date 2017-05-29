@@ -1,9 +1,11 @@
 <template>
 	<div class="page">
 		<!--载入并缓存分页内容-->
-		<keep-alive>
-			<router-view></router-view>
-		</keep-alive>
+		<transition :name="transitionName">
+			<keep-alive>
+				<router-view></router-view>
+			</keep-alive>
+		</transition>
 		<!--m-tab + m-tab-item 组合导航栏-->
 		<m-tab>
 			<m-tab-item path="Index">
@@ -30,6 +32,20 @@
 		components: {
 			mTab,
 			mTabItem
+		},
+		data() {
+			return {
+				transitionName: 'slide-right',
+			}
+		},
+		watch: {
+			'$route' (to, from) {
+				if(to.name=='Index'){
+					this.transitionName = 'slide-right'
+				}else{
+					this.transitionName = 'slide-left'
+				}
+			}
 		}
 	}
 </script>
