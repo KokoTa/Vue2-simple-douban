@@ -2,7 +2,7 @@
 	<div>
 		<!-- head -->
 		<m-cell :title="title" size="large" class="movie-cell">		
-			<router-link :to='{name: "Index"}' tag='a' slot='cell-right'>
+			<router-link :to='{name: path}' tag='a' slot='cell-right'>
 				<span class="more">更多<img src="/static/images/ic_arrow_green_right.png" alt=""></span>
 			</router-link>
 		</m-cell>

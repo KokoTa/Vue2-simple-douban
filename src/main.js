@@ -14,6 +14,21 @@ Vue.config.productionTip = false
 Vue.use(loading)
 Vue.use(VueAxios, axios)
 
+// 拦截器，在数据未完成加载时显示Loading界面，所有请求都会执行此拦截器
+axios.interceptors.request.use(function (config) { // config:配置信息
+	store.dispatch('showLoading')
+	return config
+}, function (err) {
+	return Promise.reject(err)
+})
+
+axios.interceptors.response.use((response) => { // response：返回的数据
+	store.dispatch('hideLoading')
+	return response
+}, (err) => {
+	return Promise.reject(err)
+}) 
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

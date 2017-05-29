@@ -5,7 +5,7 @@
 			<m-movie-group
 				:list="inTheaters"
 				title="影院热映"
-				path="Intheaters"
+				path="InTheaters"
 			></m-movie-group>
 			<div class="line"></div>
 			<!-- 注意这个ifStar，字面量语法 vs 动态语法 -->
