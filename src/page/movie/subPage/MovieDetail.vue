@@ -144,7 +144,7 @@
 			summarySlice () {
 				var summary = this.data.summary
 				var length = summary.length
-				if(length > 170) {
+				if(length > 70) {
 					this.newSummary = summary.slice(0, 70) + '...'
 				}
 			},
@@ -206,6 +206,7 @@
 		padding: 25px 15px;
 		border-bottom: 1px solid #e4e4e4;
 		.movieInfo-text {
+			flex: 1;
 			h3 {
 				font-size: 2.5rem;
 				font-weight: bolder;

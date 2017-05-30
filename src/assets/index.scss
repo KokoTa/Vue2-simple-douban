@@ -60,6 +60,7 @@
 
 // 正在热映和即将上映样式
 .film-wrap {
+	width: 100%;
 	margin-top: 40px;
 	transition: all .5s ease;
 	position: absolute; // 动画需要容器为absolute
