@@ -11,7 +11,7 @@
 					<p class="looker">{{ item.collect_count }}人看过</p>
 				</div>
 				<div class="film-item-right">
-					<router-link :to="{name: MovieDetail, params: {id: item.id}}" tag="a" class="btn">
+					<router-link :to="{name: 'MovieDetail', params: {id: item.id}}" tag="a" class="btn">
 						详情
 					</router-link>
 				</div>

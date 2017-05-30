@@ -6,7 +6,7 @@
 					v-for="(item, index) in list.subjects"
 					:key="index"
 		        >
-		        	<router-link :to="{ name: 'Index', params:{id: item.id}}" tag='a'>
+		        	<router-link :to="{ name: 'MovieDetail', params:{id: item.id}}" tag='a'>
 		        		<img :src="item.images.medium" alt="">
 		        		<div class="text">{{ item.title }}</div>
 		        		<m-star v-if="ifStar" :num="item.rating.average">
@@ -91,10 +91,13 @@
 				font-size: 1.4rem;
 				font-weight: bolder;
 				color: black;
+				display: block;
+				height: 100%;
+				width: 100%;
 			}
 			img {
 				width: 100%;
-				height: 150px;
+				height: 145px;
 			}
 			.text {
 				width: 100%;

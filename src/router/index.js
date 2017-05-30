@@ -7,6 +7,8 @@ import Movie from '@/page/movie/Movie.vue'
 import Film from '@/page/film/Film.vue'
 import InTheaters from '@/page/film/subPage/InTheaters.vue'
 import ComingSoon from '@/page/film/subPage/ComingSoon.vue'
+import MovieDetail from '@/page/movie/subPage/MovieDetail.vue'
+import MovieInfo from '@/page/movie/subPage/MovieInfo.vue'
 
 Vue.use(Router)
 
@@ -46,13 +48,25 @@ export default new Router({
         }
       ]
     },
+    {
+      path: '/tab/movie/detail/:id',
+      name: 'MovieDetail',
+      component: MovieDetail,
+      children: [
+        {
+          path: 'movieInfo',
+          name: 'MovieInfo',
+          component: MovieInfo
+        }
+      ]
+    },
   	{
   		path: '/',
-  		redirect: '/Tab/index'
+  		redirect: '/tab/index'
   	},
   	{
   		path: '*',
-  		redirect: '/Tab/index'
+  		redirect: '/tab/index'
   	}
   ]
 })

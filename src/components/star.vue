@@ -4,7 +4,7 @@
 			<img v-if="item == 1" src="/static/images/rating_star_small_on.png" alt="">
 			<img v-else class="star-img" src="/static/images/rating_star_small_off.png" alt="">
 		</span>
-		<span class="mark">{{ num }}</span>
+		<span class="mark" :class="{hide: isShow == false}">{{ num }}</span>
 	</div>
 </template>
 
@@ -14,6 +14,10 @@
 			num: {
 				type: Number,
 				default: 0
+			},
+			isShow: {
+				type: Boolean,
+				default: true
 			}
 		},
 		computed: {
@@ -42,5 +46,8 @@
 		color: #999;
 		font-size: 1rem;
 		font-weight: normal;
+	}
+	.hide {
+		display: none;
 	}
 </style>
