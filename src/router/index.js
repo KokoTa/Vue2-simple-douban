@@ -9,6 +9,7 @@ import InTheaters from '@/page/film/subPage/InTheaters.vue'
 import ComingSoon from '@/page/film/subPage/ComingSoon.vue'
 import MovieDetail from '@/page/movie/subPage/MovieDetail.vue'
 import MovieInfo from '@/page/movie/subPage/MovieInfo.vue'
+import Top250 from '@/page/movie/subPage/Top250.vue'
 
 Vue.use(Router)
 
@@ -59,6 +60,11 @@ export default new Router({
           component: MovieInfo
         }
       ]
+    },
+    {
+      path: '/tab/movie/top250',
+      name: 'Top250',
+      component: Top250
     },
   	{
   		path: '/',
