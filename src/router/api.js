@@ -34,3 +34,5 @@ export function getComingSoon(){
 export function getMovieDetail(id){
     return fetch('/movie/subject/'+id);
 }
+
+// PS: 其余请求url需要申请才能使用

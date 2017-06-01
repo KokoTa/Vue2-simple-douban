@@ -5,7 +5,7 @@
 		<div class="swiper-container" ref="rank">
 		    <div class="swiper-wrapper">
 		        <div class="swiper-slide" v-for="(item, index) in rankList" :key="index">
-		        	<router-link :to="{ name: 'Top250' }">
+		        	<router-link :to="{ name: item.name }">
 		        		<img :src="item.img" alt="">
 		        	</router-link>
 		        </div>

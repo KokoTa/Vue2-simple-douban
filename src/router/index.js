@@ -10,6 +10,9 @@ import ComingSoon from '@/page/film/subPage/ComingSoon.vue'
 import MovieDetail from '@/page/movie/subPage/MovieDetail.vue'
 import MovieInfo from '@/page/movie/subPage/MovieInfo.vue'
 import Top250 from '@/page/movie/subPage/Top250.vue'
+import New_movies from '@/page/movie/subPage/New_movies.vue'
+import Us_box from '@/page/movie/subPage/Us_box.vue'
+import Weekly from '@/page/movie/subPage/Weekly.vue'
 
 Vue.use(Router)
 
@@ -65,6 +68,21 @@ export default new Router({
       path: '/tab/movie/top250',
       name: 'Top250',
       component: Top250
+    },
+    {
+      path: '/tab/movie/newMovie',
+      name: 'New_movies',
+      component: New_movies
+    },
+    {
+      path: '/tab/movie/usBox',
+      name: 'Us_box',
+      component: Us_box
+    },
+    {
+      path: '/tab/movie/weekly',
+      name: 'Weekly',
+      component: Weekly
     },
   	{
   		path: '/',
