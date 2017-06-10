@@ -1,6 +1,17 @@
-# douban
+# 一个简单的豆瓣APP
 
-> A Vue.js project
+## 技术栈及工具
+
+1. vue全家桶 + axios
+
+2. mint-ui
+
+3. swiper
+
+4. rgbaster
+
+## 效果
+![move](./other/move.gif)
 
 ## Build Setup
 
